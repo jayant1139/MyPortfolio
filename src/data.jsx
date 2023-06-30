@@ -16,6 +16,7 @@ import Work4 from './assets/saaplab.png';
 import Work5 from './assets/userquick.png';
 import Work6 from './assets/musicplayer.png';
 import Work7 from './assets/flutterapp.png';
+import Work8 from './assets/textutils.png'
 
 import Theme1 from './assets/purple.png';
 import Theme2 from './assets/red.png';
@@ -27,7 +28,6 @@ import Theme7 from './assets/yellowgreen.png';
 import Theme8 from './assets/orange.png';
 import Theme9 from './assets/green.png';
 import Theme10 from './assets/yellow.png';
-import { useHref } from 'react-router-dom';
 
 export const links = [
   {
@@ -424,20 +424,46 @@ export const portfolio = [
       },
     ],
   },
-
   {
     id: 7,
+    img: Work8,
+    title: 'TextUtils ',
+   
+    details: [
+      
+      {
+        icon: <FaCode />,
+        title: 'Language : ',
+        desc: 'ReactJs',
+      }, 
+      {
+        icon: <FiFileText />,
+        title: 'Description: ',
+        desc: 'converts text into uppercase, lowercase, count words and copy.',
+      },
+     
+      
+      {
+        icon: <FiExternalLink />,
+        title: 'Live Demo: ',
+        linkdemo:'https://github.com/jayant1139/text-utilities',
+        desc: 'https://github.com/jayant1139/text-utilities',
+      },
+    ],
+  },
+  {
+    id: 8,
     img: Work6,
     title: 'Music Player ',
    
     details: [
       
-      ,{
+      {
         icon: <FaCode />,
         title: 'Language : ',
         desc: 'Javascript',
       }, 
-      ,{
+      {
         icon: <FiFileText />,
         title: 'Description: ',
         desc: 'used concept of object for smooth functioning',
