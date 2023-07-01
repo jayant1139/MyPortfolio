@@ -26,20 +26,21 @@
 }
 @keyframes zoomAndMoveEffect {
   0% {
-    transform: scale(1) translateX(-10%); /* Start with actual size and no movement */
+    transform: scale(1) translateX(-10%); 
   }
   50% {
-    transform: scale(1.02) translateX(10%); /* Zoom in and move 10% to the right */
+    transform: scale(1.02) translateX(10%);
   }
   100% {
-    transform: scale(1) translateX(0); /* Return to actual size and original position */
+    transform: scale(1) translateX(0);
   }
 }
  
 .home_img{
     height: 100%;
+    width: 450px;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 25px;
     box-shadow: 0 0 8px hsla(0,0%,0%,0.3);
     animation:zoomAndMoveEffect 1s ease;
    
@@ -47,7 +48,7 @@
 
 .home_data{
     /* background-color: var(--first-color); */
-    max-width: 600px;
+    max-width: 600vw;
     margin-inline: auto;
     padding-top: 20px;
 }
@@ -85,15 +86,103 @@
 }
 .color_block{
     position: fixed;
-    height: 200%;
-    width: 100%;
+    height: 200vh;
+    width: 100vw;
     background-color: var(--first-color);
-    top: -50%;
-    left: -88%;
+    top: -50vh;
+    left: -90vw;
     transform: rotate(-45deg);
     z-index: -1;
     animation:fade-in 1s ease-in-out;
 }
 .more-about{
     animation:fade-in 1s ease-in-out;
+}
+
+/* Responsive Css */
+
+/* CSS for mobile screens */
+@media (max-width: 767px) {
+  /* Add your CSS styles for mobile here */
+  .color_block{
+    
+    display:none;
+    
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+    margin:10% 2%;
+  }
+  .home_img{
+    width: 95%;
+  }
+  .home_data{
+    max-width: 300px;
+  }
+  .more-about{
+    margin: 0 15%;
+    
+  }
+  .button_icon{
+   display: flex;
+    justify-content: center;
+    width: 32%;
+    font-size:12px;
+    padding: 0;
+   align-items: center;
+
+
+  }
+  :root{
+    font-size: 39%;
+  }
+}
+
+/* CSS for tablet screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Add your CSS styles for tablet here */
+  .color_block{
+    
+    display: none;
+    
+  }
+  .home_data{
+    max-width: 400px;
+  }
+  :root{
+    font-size: 70%;
+  }
+}
+
+@media (min-width:992px) and (max-width:1023px){
+  :root{
+    font-size: 85%;
+  }
+  .color_block{
+    display: none;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1024px){
+  :root{
+    font-size: 88%;
+  }
+  .color_block{
+   
+  height: 100vh;
+  width: 100vw;
+    top: 20vh;
+    left: -90vw;
+  }
+  .home_data{
+    max-width: 500px;
+  }
+  .home{
+    grid-template-columns: 3fr 7fr;
+    align-items: center;
+    /* background-color: var(--first-color); */
+    padding: 40px;
+    height: 100vh;
+}
 }
