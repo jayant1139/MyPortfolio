@@ -9,6 +9,18 @@
       opacity: 1;
     }
   }
+  @keyframes translation{
+    0% {
+        transform:scale(1)  translateX(-5%); 
+      }
+      100% {
+        transform:scale(1.0)  translateX(0%);
+      }
+      
+}
+.portfolio-title{
+    animation: translation 0.6s ease;
+}
 .portfolio_item{
     position: relative;
     border-radius: 10px;

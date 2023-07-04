@@ -41,7 +41,7 @@ export const links = [
     id: 2,
     name: 'About',
     icon: <FaUser className='nav_icon' />,
-    path: '/MyPortfolio/about',
+    path: '/MyPortfolio/About',
   },
 
   {

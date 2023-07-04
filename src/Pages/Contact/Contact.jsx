@@ -60,7 +60,7 @@ function Contact() {
 
   return (
     <section className='contact section'>
-      <h2 className="section_title">
+      <h2 className="section_title get-in-touch-title">
         Get In <span>Touch</span>
       </h2>
 

@@ -1,3 +1,15 @@
+@keyframes translation{
+    0% {
+        transform:scale(1)  translateX(-5%); 
+      }
+      100% {
+        transform:scale(1.0)  translateX(0%);
+      }
+    }
+
+   .get-in-touch-title{
+    animation: translation  0.6s ease;
+   } 
 .contact_container{
     grid-template-columns: 4fr 8fr;
 }

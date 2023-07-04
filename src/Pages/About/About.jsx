@@ -11,7 +11,7 @@ function About() {
   return (
     <main className="section container">
       <section className="about">
-        <h2 className="section_title">About <span>Me</span></h2>
+        <h2 className="section_title about-title">About <span>Me</span></h2>
       <div className="about_container grid">
         <div className="about_info">
           <h3 className="section_subtitle">

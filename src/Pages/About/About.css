@@ -14,12 +14,21 @@
         transform: scale(1); /* Return to the actual size */
       }
 }
+
+@keyframes translation{
+    0% {
+        transform:scale(1)  translateX(-5%); 
+      }
+      100% {
+        transform:scale(1.0)  translateX(0%);
+      }
+    }
 .info_list{
     row-gap: 1.5rem;
     margin-bottom: 2rem;
 }
-.section_title{
-    animation: zoom-out-in 0.6s ease;
+.about-title{
+    animation: translation 0.6s ease;
 }
 .section_subtitle{
     font-size: var(--h3-font-size);
@@ -46,7 +55,7 @@
     color: var(--first-color);
     font-size: var(--h1-font-size);
     line-height: 1.2;
-    animation: zoom-out-in 0.6s ease;
+    animation: zoom-out-in 1s ease;
 }
 .stats_title{
     font-size: var(--small-font-size);
@@ -266,6 +275,47 @@
         margin-bottom: 0;  
     }
     
+}
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    :root{
+        font-size: 90%;
+      }
+      .skills_container{
+          grid-template-columns: repeat(4,1fr);
+      column-gap: 0rem;
+      row-gap: 3rem;
+      padding:2rem  8rem;
+      }
+      .info_list{
+          column-gap: 2rem;
+          
+      }
+      .about_container{
+          grid-template-columns: repeat(2,1fr);
+          /* */
+          padding: 2rem;
+          
+          
+      }
+      .resume_container{
+          grid-template-columns: 1fr 1fr ;
+          /* background-color: aqua; */
+          padding: 2rem;
+          column-gap: 5rem;
+      }
+     
+      .stats{
+          grid-template-columns: repeat(2,1fr);
+          column-gap: 0rem;
+          row-gap: 1rem;
+          /* row-gap: 15px; */
+          /* background-color: aqua; */
+      }
+      .stats_box{
+          width: 18vw;
+          /* padding: 4rem 5rem; */
+          margin-bottom: 1rem;  
+      }
 }
 
 @media (min-width:1921px){

@@ -19,7 +19,7 @@
         transform: scale(1); /* Start with actual size */
       }
       50% {
-        transform: scale(1.2); /* Zoom in to 1.1 times the actual size */
+        transform: scale(1.08); /* Zoom in to 1.1 times the actual size */
       }
       100% {
         transform: scale(1); /* Return to the actual size */
@@ -31,6 +31,17 @@
   }
   50% {
     transform: scale(1.02) translateX(10%);
+  }
+  100% {
+    transform: scale(1) translateX(0);
+  }
+}
+@keyframes zoomAndMoveEffect1 {
+  0% {
+    transform: scale(1) translateX(-10%); 
+  }
+  50% {
+    transform: scale(1.02) translateX(2%);
   }
   100% {
     transform: scale(1) translateX(0);
@@ -60,7 +71,7 @@
     line-height: 1.24;
     padding-left: 6rem;
    
-    animation:zoom 1.2s ease ;
+    animation:zoomAndMoveEffect1 1s ease ;
     
 }
 .home_title #jayant{
@@ -124,9 +135,7 @@
     width: 90%;
         /* margin: 2rem; */
   }
-  .home_data{
-    /* max-width: 300px; */
-  }
+  
   .more-about{
     margin: 0 15%;
     
