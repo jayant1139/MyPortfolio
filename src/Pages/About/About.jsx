@@ -45,6 +45,7 @@ function About() {
   <h3 className="section_subtitle subtitle_center"> Experience & Education</h3>
     <div className="resume_container grid">
       <div className="resume_data">
+         
         {resume.map((val)=>{
           if(val.category==='experience'){
             return <ResumeItem key={val.id}{...val}/>;

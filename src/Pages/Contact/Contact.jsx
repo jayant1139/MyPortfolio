@@ -117,7 +117,7 @@ function Contact() {
             <textarea placeholder="Your Message"  className="form_control textarea" name='message' value={message} onChange={handleMessageChange} required></textarea>
           </div>
 
-          <button className="button" type='submit' value='send'
+          <button className="button send-msg" type='submit' value='send'
          
           >
            Send Message
