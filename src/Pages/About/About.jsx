@@ -21,7 +21,7 @@ function About() {
     <Info/>
           </ul>
 
-          <a href={CV} download='' className="button">Download Cv <span className="button_icon"><FaDownload/></span></a>
+          <a href={CV} download='' className="button cv">Download Cv <span className="button_icon"><FaDownload/></span></a>
         </div>
 
         <div className="stats grid">
