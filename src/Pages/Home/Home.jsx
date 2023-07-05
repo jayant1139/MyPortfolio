@@ -2,6 +2,7 @@ import React from 'react'
 import Profile from '../../assets/home.jpg'
 import optimize from '../../assets/home-optimize.jpg'
 import optimized from '../../assets/home-optimize-min.jpg'
+import optimized_min from '../../assets/home-low.jpg'
 import {Link} from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 import './Home.css'
@@ -9,7 +10,7 @@ function Home() {
   return (
     <section className="home section grid">
      <picture> 
-      <img loading='lazy' src={Profile} srcSet={`${optimized} ${100}w,${optimize} ${330}w`}  alt="" className="home_img" /> </picture>
+      <img loading='lazy' src={Profile} srcSet={`${optimized} ${200}w, ${optimize} ${500}w,` }  alt="Profile Picture" className="home_img" /> </picture>
     <div className="home_content">
       <div className="home_data">
         <h1 className="home_title">
