@@ -288,14 +288,14 @@
       padding:2rem  8rem;
       }
       .info_list{
-          column-gap: 1rem;
+          column-gap: 2rem;
           
       }
       .about_container{
-          grid-template-columns: repeat(2,1fr);
+          grid-template-columns: repeat(1,1fr);
           /* */
-          padding-left: 1rem;
-          column-gap: 0rem;
+          padding:0 3rem;
+          column-gap: 4rem;
           
           
       }
@@ -311,22 +311,22 @@
         height: 3rem;
       }
       .resume_subtitle{
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
       .resume_description{
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
      
       .stats{
-          grid-template-columns: repeat(2,1fr);
+          grid-template-columns: repeat(3,1fr);
           column-gap: 1rem;
           row-gap: 2rem;
           /* row-gap: 15px; */
           /* background-color: aqua; */
       }
       .stats_box{
-        width: 19vw;
-        padding: 2rem;
+        width: 25vw;
+        padding:1rem 2rem;
         
       }
       .progress_circle{
