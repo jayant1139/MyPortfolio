@@ -279,7 +279,7 @@
 
 @media (min-width:768px) and (max-width:1023px){
     :root{
-        font-size: 90%;
+        font-size: 75%;
       }
       .skills_container{
           grid-template-columns: repeat(4,1fr);
@@ -288,14 +288,14 @@
       padding:2rem  8rem;
       }
       .info_list{
-          column-gap: 2rem;
+          column-gap: 1rem;
           
       }
       .about_container{
           grid-template-columns: repeat(2,1fr);
           /* */
-          padding: 2rem;
-          column-gap: 1rem;
+          padding-left: 1rem;
+          column-gap: 0rem;
           
           
       }
@@ -306,13 +306,28 @@
           column-gap: 5rem;
           
       }
+      .resume_icon{
+        width: 3rem;
+        height: 3rem;
+      }
+      .resume_subtitle{
+        font-size: 1.1rem;
+      }
+      .resume_description{
+        font-size: 1rem;
+      }
      
       .stats{
           grid-template-columns: repeat(2,1fr);
           column-gap: 1rem;
-          row-gap: 1rem;
+          row-gap: 2rem;
           /* row-gap: 15px; */
           /* background-color: aqua; */
+      }
+      .stats_box{
+        width: 19vw;
+        padding: 2rem;
+        
       }
       .progress_circle{
         width: 8rem;
