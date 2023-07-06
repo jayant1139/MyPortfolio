@@ -1,6 +1,7 @@
 .about_container,.info_list,.stats, .resume_container{
     grid-template-columns: repeat(2,1fr);
     align-items: flex-start;
+    
     /* color: var(--text-color); */
 }
 @keyframes zoom-out-in{
@@ -9,6 +10,17 @@
       }
       50% {
         transform: scale(1.2); /* Zoom in to 1.1 times the actual size */
+      }
+      100% {
+        transform: scale(1); /* Return to the actual size */
+      }
+}
+@keyframes zoom-s{
+    0% {
+        transform: scale(1); /* Start with actual size */
+      }
+      50% {
+        transform: scale(1.1); /* Zoom in to 1.1 times the actual size */
       }
       100% {
         transform: scale(1); /* Return to the actual size */
@@ -29,7 +41,9 @@
 }
 .about-title{
     animation: translation 0.6s ease;
+ 
 }
+
 .section_subtitle{
     font-size: var(--h3-font-size);
     font-weight: var(--weight-600);
@@ -55,6 +69,9 @@
     color: var(--first-color);
     font-size: var(--h1-font-size);
     line-height: 1.2;
+    animation: zoom-out-in 1s ease;
+}
+.stats_box:hover{
     animation: zoom-out-in 1s ease;
 }
 .stats_title{
@@ -91,6 +108,11 @@
     grid-template-columns: repeat(4,1fr);
     row-gap: 4rem;
     justify-items: center;
+}
+.skills_container:hover{
+    .progress_circle{
+       animation:  zoom-s 1s ease;
+    }
 }
 .progress_circle{
     width: 10rem;

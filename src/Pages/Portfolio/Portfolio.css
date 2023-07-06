@@ -1,13 +1,20 @@
 .portfolio_container{
     grid-template-columns: repeat(3,1fr);
     column-gap: 5rem;
+ 
 }
+
 @keyframes fade-in {
     0% {
       opacity: 0;
+     
+    }
+    50%{
+       
     }
     100% {
       opacity: 1;
+      
     }
   }
   @keyframes translation{
@@ -35,6 +42,7 @@ animation: fade-in 1s ease-in-out;
     width: 100%;
     object-fit: cover;
     vertical-align: middle;
+    
 }
 .portfolio_hover{
     background-color: var(--first-color);
@@ -44,10 +52,16 @@ animation: fade-in 1s ease-in-out;
     place-items: center;
     opacity: 0;
     transition: all 0.5s ease;
+    
 }
 .portfolio_item:hover .portfolio_hover{
     opacity: 1;
 }
+.portfolio_item:hover .portfolio_hover:hover{
+    transform: scale(1.1);
+    transition: all 0.6s ease;
+}
+
 .portfolio_title{
     color: var(--text-white);
     font-size: var(--large-font-size);
