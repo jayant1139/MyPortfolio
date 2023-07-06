@@ -5,8 +5,13 @@ import optimized from '../../assets/home-optimize-min.jpg'
 import {Link} from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
 import { Tilt } from 'react-tilt'
+
+
 import './Home.css'
 function Home() {
+
+  
+  
   const defaultOptions = {
     reverse:        true,  // reverse the tilt direction
     max:            25,     // max tilt rotation (degrees)
@@ -19,9 +24,11 @@ function Home() {
     easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
   }
   return (
+    <>
+        {/* {isLoading && <Lines />} */}
     <section className="home section grid">
      <Tilt options={defaultOptions}> 
-      <img loading='lazy' src={Profile} srcSet={`${optimized} ${200}w, ${optimize} ${500}w,` }  alt="" className="home_img" /> </Tilt>
+      <img  src={Profile} srcSet={`${optimized} ${200}w, ${optimize} ${500}w,` }  alt="" className="home_img" /> </Tilt>
     <div className="home_content">
       <div className="home_data">
         <h1 className="home_title">
@@ -37,6 +44,7 @@ function Home() {
     <div className="color_block"></div>
 
     </section>
+    </>
   )
 }
 
