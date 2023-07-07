@@ -37,7 +37,7 @@ function Home() {
         <p className="home_description" >
           I'm a Front-end developer focused on crafting clean and user-friendly experiences, I am passionate about building excellent software that improves the lives of those around me.
         </p>
-        <Link to='/MyPortfolio/About' className='button more-about'>More About Me <span className='button_icon'><FaArrowRight/></span></Link>
+        <Link to='/About' className='button more-about'>More About Me <span className='button_icon'><FaArrowRight/></span></Link>
       </div>
     </div>
 
