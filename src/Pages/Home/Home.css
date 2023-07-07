@@ -86,7 +86,7 @@
   font-size: var(--h1-font-size);
   line-height: 1.24;
   padding-left: 6rem;
-
+cursor: pointer;
   animation: zoomAndMoveEffect1 1s ease;
 
 }
@@ -115,6 +115,7 @@
   margin-block: 1rem 2rem;
   color: var(--text-color);
   width: 50vw;
+  cursor: pointer;
   animation: fade-in 0.5s ease-in-out;
 }
 
