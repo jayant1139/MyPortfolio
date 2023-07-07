@@ -15,10 +15,18 @@ useEffect(() => {
  
     const timer = setTimeout(() => {
       setIsLoading(false); // Set isLoading to false after a certain delay (simulating image loading time)
-      alanBtn({
+     const alanAi= alanBtn({
         key: '6c424b283552079def6b8ac9e8ed82662e956eca572e1d8b807a3e2338fdd0dc/stage',
+        onReady: function () {
+          const title = document.querySelector('.home_title').innerText;
+          alanAi.playText(title);
+          setTimeout(() => {
+            const description = document.querySelector('.home_description').innerText;
+            alanAi.playText(description);
+          }, 2000);
+        },
         onCommand: (commandData) => {
-          if (commandData.command === 'aboutpage') {
+          if (commandData.command === 'aboutpage' || commandData.command==='about') {
             // Call the client code that will react to the received command
            window.location.href='#/About';
           }
@@ -36,6 +44,7 @@ useEffect(() => {
           }
         }
     });
+
     }, 3000); // Adjust the delay time according to your needs
 
     return () => {
