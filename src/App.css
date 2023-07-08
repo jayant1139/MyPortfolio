@@ -198,3 +198,12 @@ transition: all 0.3s ease-out;
     transform: scale(1);
   }
 }
+
+.loader-spinner{
+  /* background-color: #791dc4; */
+  
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}

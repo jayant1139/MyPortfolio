@@ -86,7 +86,7 @@
   font-size: var(--h1-font-size);
   line-height: 1.24;
   padding-left: 6rem;
-cursor: pointer;
+  cursor: pointer;
   animation: zoomAndMoveEffect1 1s ease;
 
 }
@@ -162,8 +162,9 @@ cursor: pointer;
   }
 
   .home_data {
-  margin: auto;
+    margin: auto;
   }
+
   .more-about {
     margin: 0 15%;
 
