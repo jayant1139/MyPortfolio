@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './Components/Navbar'
@@ -10,47 +10,62 @@ import alanBtn from '@alan-ai/alan-sdk-web';
 import { Audio, BallTriangle, Rings } from 'react-loader-spinner';
 
 function App() {
-const [isLoading,setIsLoading]=useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+  let aiBtn = null;
   useEffect(() => {
+    let flag = false;
     const timer = setTimeout(() => {
       console.log('This will run after 1 second!');
       setIsLoading(false);
-      alanBtn({
+      aiBtn = alanBtn({
         key: '6c424b283552079def6b8ac9e8ed82662e956eca572e1d8b807a3e2338fdd0dc/stage',
+        onButtonState: async function (status) {
+          if (status === 'ONLINE') {
+            if (!flag) {
+              await aiBtn.activate();
+              aiBtn.playText("Hello! I'm your virtual assistant. How can I help you?");
+              flag = true;
+            }
+          }
+        },
         onCommand: (commandData) => {
-  
-          if (commandData.command === 'aboutpage' || commandData.command === 'about') {
-            // Call the client code that will react to the received command
+
+          if ((commandData.command === 'aboutpage' || commandData.command === 'go to about')) {
+
             window.location.href = '#/About';
           }
           else if (commandData.command === 'homepage') {
-            // Call the client code that will react to the received command
             window.location.href = '#/';
           }
           else if (commandData.command === 'portfoliopage') {
-            // Call the client code that will react to the received command
             window.location.href = '#/Portfolio';
           }
           if (commandData.command === 'contactpage') {
-            // Call the client code that will react to the received command
             window.location.href = '#/Contact';
           }
-        }
-      })
+        },
+
+      });
     }, 2000);
-    return () => clearTimeout(timer);
+    return () => {
+      if (aiBtn) {
+        aiBtn.destroy()
+      }
+
+      clearTimeout(timer);
+    }
   }, []);
 
   if (isLoading) {
     return <BallTriangle
-    height="100"
-    width="100"
-    radius="5"
-    color="	#8a2ce2"
-    ariaLabel="loading"
-    
-    wrapperClass="loader-spinner" 
-  />
+      height="100"
+      width="100"
+      radius="5"
+      color="	#8a2ce2"
+      ariaLabel="loading"
+
+      wrapperClass="loader-spinner"
+    />
   }
 
   return (

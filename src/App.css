@@ -200,8 +200,6 @@ transition: all 0.3s ease-out;
 }
 
 .loader-spinner{
-  /* background-color: #791dc4; */
-  
   display: flex;
   min-height: 100vh;
   justify-content: center;

@@ -327,11 +327,6 @@ export const portfolio = [
         title: 'Language : ',
         desc: 'React JS',
       },
-      // {
-      //   icon: <FiExternalLink />,
-      //   title: 'Preview : ',
-      //   desc: 'https://hd-testing-1aa93.firebaseapp.com/',
-      // },
     ],
   },
 

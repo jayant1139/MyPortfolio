@@ -1,7 +1,6 @@
 .home {
   grid-template-columns: 3.32fr 6.68fr;
   align-items: center;
-  /* background-color: var(--first-color); */
   padding: 2rem;
   height: 100vh;
 
@@ -74,7 +73,6 @@
 
 
 .home_data {
-  /* background-color: var(--first-color); */
   width: 60vw;
   margin-inline: auto;
   padding-top: 1rem;
@@ -136,29 +134,22 @@
   animation: fade-in 1s ease-in-out;
 }
 
-/* Responsive Css */
+/* ---------------------------------------Responsive CSS CODE--------------------------------------------- */
 
 /* CSS for mobile screens */
 @media (max-width: 767px) {
 
-  /* Add your CSS styles for mobile here */
   .color_block {
-
     display: none;
-
   }
 
   .home {
-
     display: grid;
     grid-template-columns: 0.5fr;
-
     justify-content: center;
     row-gap: 1rem;
-
     align-items: center;
     margin-top: 10% auto;
-
   }
 
   .home_data {
@@ -177,8 +168,6 @@
     font-size: 1.5rem;
     padding: 0;
     align-items: center;
-
-
   }
 
   :root {
@@ -186,10 +175,9 @@
   }
 }
 
-/* CSS for tablet screens */
+/* -------------------------------------CSS for tablet screens-------------------------- */
 @media (min-width: 768px) and (max-width: 991px) {
 
-  /* Add your CSS styles for tablet here */
   .color_block {
 
     display: none;
@@ -207,9 +195,6 @@
 
   .home {
     grid-template-columns: 4.32fr 5.68fr;
-    /* align-items: center; */
-    /* background-color: var(--first-color); */
-
   }
 
   :root {
