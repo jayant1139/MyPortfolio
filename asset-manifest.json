@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MyPortfolio/static/css/main.af3ca637.css",
-    "main.js": "/MyPortfolio/static/js/main.36493b40.js",
+    "main.js": "/MyPortfolio/static/js/main.41590389.js",
     "static/js/787.f40fc02d.chunk.js": "/MyPortfolio/static/js/787.f40fc02d.chunk.js",
     "static/media/home.jpg": "/MyPortfolio/static/media/home.70de912d468ea8ae9cb9.jpg",
     "static/media/kaayamo.jpg": "/MyPortfolio/static/media/kaayamo.7f31ac3403c445e5be67.jpg",
     "static/media/home-optimize.jpg": "/MyPortfolio/static/media/home-optimize.ef6a6e90750e335c7919.jpg",
     "static/media/home-optimize-min.jpg": "/MyPortfolio/static/media/home-optimize-min.46f1d77f84fb6419eb70.jpg",
     "static/media/prashnottar.png": "/MyPortfolio/static/media/prashnottar.fd24e026dacf47bb3b12.png",
-    "static/media/jayant_resume.pdf": "/MyPortfolio/static/media/jayant_resume.d26ed51f708601845698.pdf",
+    "static/media/cv.pdf": "/MyPortfolio/static/media/cv.b689f71c61b3e4dfb968.pdf",
     "static/media/cronytech.png": "/MyPortfolio/static/media/cronytech.d7f5ff5fe92c17f7e082.png",
     "static/media/userquick.png": "/MyPortfolio/static/media/userquick.98b95cc087e7319ee7eb.png",
     "static/media/flutterapp.png": "/MyPortfolio/static/media/flutterapp.bda58ab216b4384b1439.png",
@@ -18,11 +18,11 @@
     "index.html": "/MyPortfolio/index.html",
     "static/media/close-1.svg": "/MyPortfolio/static/media/close-1.62d542d8225e9ae56794bdce0b546338.svg",
     "main.af3ca637.css.map": "/MyPortfolio/static/css/main.af3ca637.css.map",
-    "main.36493b40.js.map": "/MyPortfolio/static/js/main.36493b40.js.map",
+    "main.41590389.js.map": "/MyPortfolio/static/js/main.41590389.js.map",
     "787.f40fc02d.chunk.js.map": "/MyPortfolio/static/js/787.f40fc02d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af3ca637.css",
-    "static/js/main.36493b40.js"
+    "static/js/main.41590389.js"
   ]
 }
