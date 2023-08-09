@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     let flag = false;
     const timer = setTimeout(() => {
-      console.log('This will run after 1 second!');
+      console.log('This will run after 2 second!');
       setIsLoading(false);
       aiBtn = alanBtn({
         key: '6c424b283552079def6b8ac9e8ed82662e956eca572e1d8b807a3e2338fdd0dc/stage',

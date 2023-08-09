@@ -3,7 +3,7 @@ import './About.css'
 import { resume } from '../../data'
 import Info from '../../Components/Info'
 import Stats from '../../Components/Stats'
-import CV from '../../assets/jayant_resume.pdf'
+import CV from '../../assets/cv.pdf'
 import Skills from '../../Components/Skills'
 import { FaDownload } from 'react-icons/fa'
 import ResumeItem from '../../Components/ResumeItem'
@@ -31,15 +31,6 @@ function About() {
       </section>
 
       <div className="separator"></div>
-
-      <section className="skills">
-        <h3 className="section_subtitle subtitle_center">My Skills</h3>
-        <div className="skills_container grid">
-          <Skills />
-        </div>
-      </section>
-      <div className="separator"></div>
-
       <section className="resume">
 
         <h3 className="section_subtitle subtitle_center"> Experience & Education</h3>
@@ -63,6 +54,16 @@ function About() {
         </div>
       </section>
 
+      <div className="separator"></div>
+
+
+
+      <section className="skills">
+        <h3 className="section_subtitle subtitle_center">My Skills</h3>
+        <div className="skills_container grid">
+          <Skills />
+        </div>
+      </section>
 
     </main>
   )

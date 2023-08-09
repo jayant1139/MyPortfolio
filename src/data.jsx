@@ -183,7 +183,7 @@ export const resume = [
     icon: <FaGraduationCap />,
     year: '2018',
     title: 'Senior Secondary <span> Saint Soldier Public School (CBSE) </span>',
-    desc: '<b>Specialization:</b> Physics, Chemistry, Maths and Informatic Practices ,<br/> Percentage: 78.2%',
+    desc: '<b>Specialization:</b> Physics, Chemistry, Maths and Informatic Practices<br/> Percentage: 78.2%',
   },
 
   {
